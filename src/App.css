@@ -2090,6 +2090,7 @@ input, select, textarea {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+    outline: none;
   }
 
     input[type="submit"].icon:before,
@@ -2216,7 +2217,7 @@ input, select, textarea {
     input[type="button"]:hover,
     button:hover,
     .button:hover {
-      box-shadow: inset 0 0 0 2px #18bfef;
+      box-shadow: inset 0 0 0 0px #18bfef;
       color: #18bfef !important;
     }
 
@@ -4682,7 +4683,7 @@ input, select, textarea {
     }
 
     .gallery-wrapper {
-      margin-left: -1%;
+      margin-left: 0px;
     }
 
     .gallery-item {
@@ -4690,8 +4691,13 @@ input, select, textarea {
         height: auto;
         padding-left: 11px;
         padding-top: 11px;
+        padding-right: 0px;
         display: inline-block;
         position: relative;
+    }
+
+    .gallery-item:focus {
+      outline: 0;
     }
 
       /*Resizing for gallery item*/
