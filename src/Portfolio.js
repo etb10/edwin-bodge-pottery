@@ -100,7 +100,6 @@ class Portfolio extends Component {
                   </div>
 
                 {/* Footer */}
-                  <EdwinFooter/>
 
               </div>
 
