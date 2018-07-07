@@ -14,23 +14,50 @@ class Portfolio extends Component {
 
   constructor() {
     super();
+    const allImages = DataArrays.PortfolioImages;
+    const keyPhotos = this.extractKeyPhotos(allImages);
     this.state = {
-      portfolioImages: DataArrays.PortfolioImages,
+      allImages: allImages,
+      portfolioImages: keyPhotos,
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
+      lightboxPhotos: []
     }
     this.openLightbox = this.openLightbox.bind(this);
   }
 
-  openLightbox(imageTag) {
+  openLightbox(tag) {
+    const images = this.extractMatchingPhotos(this.state.allImages, tag);
     this.setState({
       isOpen: true,
-      photoIndex: 0
+      photoIndex: 0,
+      lightboxPhotos: images
     })
+  }
+
+  // add all photos that are marked as key to the list
+  extractKeyPhotos(allImages) {
+    var keyPhotos = [];
+    for(let i=0; i<allImages.length; i++) {
+      if(allImages[i].keyPhoto) {
+        keyPhotos.push(allImages[i]);
+      }
+    }
+    return keyPhotos;
+  }
+
+  extractMatchingPhotos(allImages, tag) {
+    var matchingPhotos = [];
+    for(let i=0; i<allImages.length; i++) {
+      if(allImages[i].tag == tag) {
+        matchingPhotos.push(allImages[i]);
+      }
+    }
+    return matchingPhotos;
   }
  
   render() {
-    const { portfolioImages, photoIndex, isOpen } = this.state;
+    const { lightboxPhotos, allImages, portfolioImages, photoIndex, isOpen } = this.state;
     return ( 
         <div>
             {/* Mobile Menu */}
@@ -63,8 +90,7 @@ class Portfolio extends Component {
                           {
                             this.state.portfolioImages.map((portfolioImage, index) => 
                               <GalleryItem
-                                imageName={portfolioImage.imageName}
-                                imageLabel={portfolioImage.imageLabel}
+                                imageData={portfolioImage}
                                 openModal={this.openLightbox}
                               />
                             )
@@ -82,18 +108,18 @@ class Portfolio extends Component {
 
                 {isOpen && (
                   <Lightbox
-                    mainSrc={portfolioImages[photoIndex].imageName}
-                    nextSrc={portfolioImages[(photoIndex + 1) % portfolioImages.length].imageName}
-                    prevSrc={portfolioImages[(photoIndex + portfolioImages.length - 1) % portfolioImages.length].imageName}
+                    mainSrc={lightboxPhotos[photoIndex].imageName}
+                    nextSrc={lightboxPhotos[(photoIndex + 1) % lightboxPhotos.length].imageName}
+                    prevSrc={lightboxPhotos[(photoIndex + lightboxPhotos.length - 1) % lightboxPhotos.length].imageName}
                     onCloseRequest={() => this.setState({ isOpen: false })}
                     onMovePrevRequest={() =>
                       this.setState({
-                        photoIndex: (photoIndex + portfolioImages.length - 1) % portfolioImages.length,
+                        photoIndex: (photoIndex + lightboxPhotos.length - 1) % lightboxPhotos.length,
                       })
                     }
                     onMoveNextRequest={() =>
                       this.setState({
-                        photoIndex: (photoIndex + 1) % portfolioImages.length,
+                        photoIndex: (photoIndex + 1) % lightboxPhotos.length,
                       })
                     }
                   />

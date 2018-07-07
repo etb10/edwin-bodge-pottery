@@ -5,25 +5,26 @@ class GalleryItem extends Component {
 
 
   // Props
-  /*
-    imageName: name of image within public folder
-    imageLabel: label displayed over image
-    openModal: callback to parent opening modal
+  /* imageData: contains the following JSON properties
+        imageName: name of image within public folder
+        imageLabel: label displayed over image
+        tag
+     openModal: callback to parent opening modal
   */
   constructor(props) {
-    console.log("Constructing a GalleryItem!")
     super(props);
+    const imageData = props.imageData;
     this.state = {
-      imageName: this.props.imageName,
-      imageLabel: this.props.imageLabel,
-      imageTag: "eye"
+      imageName:  imageData.imageName,
+      imageLabel: imageData.imageLabel,
+      tag:        imageData.tag
     }
   }
  
   render() {
     const imageExtension = this.state.imageName;
     return ( 
-      <button className="gallery-item" onClick={() => this.props.openModal(this.state.imageTag)}>
+      <button className="gallery-item" onClick={() => this.props.openModal(this.state.tag)}>
         <div className="overlay">
               <img src={imageExtension} alt={this.state.imageLabel}/>
         </div>
