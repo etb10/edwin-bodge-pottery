@@ -1,175 +1,175 @@
 {
 	"PortfolioImages" : [
 		{
-			"imageName":  "images/portfolio/cell_1.jpg",
+			"imageName":  "images/portfolio/cell_1",
 			"imageLabel": "Eukaryotic Cell",
 			"tag": "cell",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/cell_2.jpg",
+			"imageName":  "images/portfolio/cell_2",
 			"imageLabel": "Eukaryotic Cell",
 			"tag": "cell",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/virus_1.jpg",
+			"imageName":  "images/portfolio/virus_1",
 			"imageLabel": "Viral Cell",
 			"tag": "virus",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/mitosis_1.jpg",
+			"imageName":  "images/portfolio/mitosis_1",
 			"imageLabel": "Cells in Mitosis",
 			"tag": "mitosis",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/lyse_1.jpg",
+			"imageName":  "images/portfolio/lyse_1",
 			"imageLabel": "Cell in Lysis",
 			"tag": "lyse",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/lyse_2.jpg",
+			"imageName":  "images/portfolio/lyse_2",
 			"imageLabel": "Cell in Lysis",
 			"tag": "lyse",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/eye_1.jpg",
+			"imageName":  "images/portfolio/eye_1",
 			"imageLabel": "Eyeball",
 			"tag": "eye",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/eye_2.jpg",
+			"imageName":  "images/portfolio/eye_2",
 			"imageLabel": "Eyeball",
 			"tag": "eye",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/lungs_1.jpg",
+			"imageName":  "images/portfolio/lungs_1",
 			"imageLabel": "Lungs and Trachea",
 			"tag": "lungs",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/lungs_2.jpg",
+			"imageName":  "images/portfolio/lungs_2",
 			"imageLabel": "Lungs and Trachea",
 			"tag": "lungs",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/lungs_3.jpg",
+			"imageName":  "images/portfolio/lungs_3",
 			"imageLabel": "Lungs and Trachea",
 			"tag": "lungs",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/stomach_0.jpg",
+			"imageName":  "images/portfolio/stomach_0",
 			"imageLabel": "Small Intestine",
 			"tag": "stomach",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/stomach_1.jpg",
+			"imageName":  "images/portfolio/stomach_1",
 			"imageLabel": "Small Intestine",
 			"tag": "stomach",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/stomach_2.jpg",
+			"imageName":  "images/portfolio/stomach_2",
 			"imageLabel": "Small Intestine",
 			"tag": "stomach",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/stomach_3.jpg",
+			"imageName":  "images/portfolio/stomach_3",
 			"imageLabel": "Small Intestine",
 			"tag": "stomach",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/brain_1.jpg",
+			"imageName":  "images/portfolio/brain_1",
 			"imageLabel": "Brain",
 			"tag": "brain",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/brain_2.jpg",
+			"imageName":  "images/portfolio/brain_2",
 			"imageLabel": "Brain",
 			"tag": "brain",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/heart_finished_1.jpg",
+			"imageName":  "images/portfolio/heart_finished_1",
 			"imageLabel": "Heart",
 			"tag": "heart",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/heart_finished_2.jpg",
+			"imageName":  "images/portfolio/heart_finished_2",
 			"imageLabel": "Heart",
 			"tag": "heart",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/heart_finished_3.jpg",
+			"imageName":  "images/portfolio/heart_finished_3",
 			"imageLabel": "Heart",
 			"tag": "heart",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/kidney_finished_1.jpg",
+			"imageName":  "images/portfolio/kidney_finished_1",
 			"imageLabel": "Kidney",
 			"tag": "kidney",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/kidney_finished_2.jpg",
+			"imageName":  "images/portfolio/kidney_finished_2",
 			"imageLabel": "Kidney",
 			"tag": "kidney",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/hand_1.jpg",
+			"imageName":  "images/portfolio/hand_1",
 			"imageLabel": "Hand",
 			"tag": "hand",
 			"keyPhoto": true,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/hand_2.jpg",
+			"imageName":  "images/portfolio/hand_2",
 			"imageLabel": "Hand",
 			"tag": "hand",
 			"keyPhoto": false,
 			"concentration": true
 		},
 		{
-			"imageName":  "images/portfolio/foot_1.jpg",
+			"imageName":  "images/portfolio/foot_1",
 			"imageLabel": "Foot",
 			"tag": "foot",
 			"keyPhoto": true,

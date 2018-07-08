@@ -10,6 +10,9 @@ import GalleryItem from './Components/GalleryItem.js';
 
 import DataArrays from './data/arrays.json';
 
+var compressedName = ".thumbnail";
+var fullName = ".full";
+
 class Portfolio extends Component {
 
   constructor() {
@@ -40,7 +43,9 @@ class Portfolio extends Component {
     var keyPhotos = [];
     for(let i=0; i<allImages.length; i++) {
       if(allImages[i].keyPhoto) {
-        keyPhotos.push(allImages[i]);
+        var image = allImages[i];
+        image.imageName = image.imageName.split('.')[0] + compressedName;
+        keyPhotos.push(image);
       }
     }
     return keyPhotos;
@@ -50,7 +55,10 @@ class Portfolio extends Component {
     var matchingPhotos = [];
     for(let i=0; i<allImages.length; i++) {
       if(allImages[i].tag == tag) {
-        matchingPhotos.push(allImages[i]);
+        var image = allImages[i];
+        image.imageName = image.imageName.split('.')[0] + fullName;
+        console.log(image.imageName);
+        matchingPhotos.push(image);
       }
     }
     return matchingPhotos;
