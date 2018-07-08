@@ -67,7 +67,7 @@ class Portfolio extends Component {
   render() {
     const { lightboxPhotos, allImages, portfolioImages, photoIndex, isOpen } = this.state;
     const photoIndexPlus1 = photoIndex + 1;
-    const photoIndexLabel = " (" + photoIndexPlus1 + " of " + lightboxPhotos.length + ")";
+    const photoIndexLabel = "(" + photoIndexPlus1 + " of " + lightboxPhotos.length + ")";
     return ( 
         <div>
             {/* Mobile Menu */}
@@ -131,7 +131,8 @@ class Portfolio extends Component {
                         photoIndex: (photoIndex + 1) % lightboxPhotos.length,
                       })
                     }
-                    imageTitle={lightboxPhotos[photoIndex].imageLabel + photoIndexLabel}
+                    imageTitle={lightboxPhotos[photoIndex].imageLabel}
+                    imageCaption={photoIndexLabel}
                   />
                 )}
 

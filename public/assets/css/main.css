@@ -4802,6 +4802,9 @@ input, select, textarea {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding-bottom: 46px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .close:hover,
@@ -4823,4 +4826,18 @@ input, select, textarea {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+}
+
+/* remove zoom buttons on mobile */
+@media only screen and (max-width: 550px) {
+	.zoom-in {
+		visibility: hidden;
+	}
+	.zoom-out {
+		visibility: hidden;
+	}
+}
+
+.ril-caption-content {
+	margin: auto;
 }
