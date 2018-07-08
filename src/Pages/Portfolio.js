@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 import Lightbox from 'lightbox-react';
 import 'react-image-lightbox/style.css';
 
-import EdwinMenu from './Components/EdwinMenu.js';
-import NavBar from './Components/NavBar.js';
-import EdwinFooter from './Components/EdwinFooter.js';
-import GalleryItem from './Components/GalleryItem.js';
+import EdwinMenu from '../Components/EdwinMenu.js';
+import NavBar from '../Components/NavBar.js';
+import EdwinFooter from '../Components/EdwinFooter.js';
+import GalleryItem from '../Components/GalleryItem.js';
 
-import DataArrays from './data/arrays.json';
+import DataArrays from '../data/arrays.json';
 
 var compressedName = ".thumbnail";
 var fullName = ".full";
@@ -78,11 +78,11 @@ class Portfolio extends Component {
 
                 {/* Header */}
                   <header id="header">
-                    <a href="index.html" className="logo">Edwin Bodge Pottery</a>
+                    <a href="/" className="logo">Edwin Bodge Pottery</a>
                   </header>
 
                 {/* Nav */}
-                  <NavBar/>
+                  <NavBar name="portfolio"/>
 
                 {/* Main */}
                   <div id="main">
@@ -110,6 +110,7 @@ class Portfolio extends Component {
                   </div>
 
                 {/* Footer */}
+                  <EdwinFooter/>
 
               </div>
 

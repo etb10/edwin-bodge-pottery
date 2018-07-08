@@ -3,10 +3,18 @@ import '../App.css';
 
 class NavBar extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    var {home, portfolio, elements} = "";
+    if(props.name == "portfolio") {
+      portfolio = "active";
+    } else if(props.name == "home") {
+      home = "active";
+    } if(props.name == "elements") {
+      elements = "active";
+    }
     this.state = {
-
+      home, portfolio, elements
     }
   }
  
@@ -14,9 +22,9 @@ class NavBar extends Component {
     return ( 
                   <nav id="nav"> 
                     <ul className="links">
-                      <li><a href="/">Home</a></li>
-                      <li className="active"><a href="portfolio">AP Portfolio</a></li>
-                      <li><a href="elements">Elements Reference</a></li>
+                      <li className={this.state.home}><a href="/">Home</a></li>
+                      <li className={this.state.portfolio}><a href="portfolio">AP Portfolio</a></li>
+                      <li className={this.state.elements}><a href="elements">Elements Reference</a></li>
                     </ul>
                     <ul className="icons">
                       <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>

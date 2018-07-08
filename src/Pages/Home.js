@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import firebase, { auth, provider } from './firebase.js';
+import '../App.css';
+import firebase, { auth, provider } from '../firebase.js';
 
 class Home extends Component {
 
