@@ -20,6 +20,15 @@ class GalleryItem extends Component {
       tag:        imageData.tag
     }
   }
+
+  componentWillReceiveProps(nextProps) {
+    const imageData = nextProps.imageData;
+    this.setState({
+      imageName:  imageData.imageName,
+      imageLabel: imageData.imageLabel,
+      tag:        imageData.tag
+    })
+  }
  
   render() {
     const imageExtension = this.state.imageName;

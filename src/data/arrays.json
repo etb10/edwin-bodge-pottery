@@ -1,183 +1,136 @@
 {
 	"PortfolioImages" : [
 		{
-			"imageName":  "images/portfolio/cell_1",
+			"imageName":  "images/portfolio/cell_",
 			"imageLabel": "Eukaryotic Cell",
 			"tag": "cell",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/cell_2",
-			"imageLabel": "Eukaryotic Cell",
-			"tag": "cell",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/virus_1",
+			"imageName":  "images/portfolio/virus_",
 			"imageLabel": "Viral Cell",
 			"tag": "virus",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 1
 		},
 		{
-			"imageName":  "images/portfolio/mitosis_1",
+			"imageName":  "images/portfolio/mitosis_",
 			"imageLabel": "Cells in Mitosis",
 			"tag": "mitosis",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 1
 		},
 		{
-			"imageName":  "images/portfolio/lyse_1",
+			"imageName":  "images/portfolio/lyse_",
 			"imageLabel": "Cell in Lysis",
 			"tag": "lyse",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/lyse_2",
-			"imageLabel": "Cell in Lysis",
-			"tag": "lyse",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/eye_1",
+			"imageName":  "images/portfolio/eye_",
 			"imageLabel": "Eyeball",
 			"tag": "eye",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/eye_2",
-			"imageLabel": "Eyeball",
-			"tag": "eye",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/lungs_1",
+			"imageName":  "images/portfolio/lungs_",
 			"imageLabel": "Lungs and Trachea",
 			"tag": "lungs",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 3
 		},
 		{
-			"imageName":  "images/portfolio/lungs_2",
-			"imageLabel": "Lungs and Trachea",
-			"tag": "lungs",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/lungs_3",
-			"imageLabel": "Lungs and Trachea",
-			"tag": "lungs",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/stomach_0",
+			"imageName":  "images/portfolio/stomach_",
 			"imageLabel": "Small Intestine",
 			"tag": "stomach",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 4
 		},
 		{
-			"imageName":  "images/portfolio/stomach_1",
-			"imageLabel": "Small Intestine",
-			"tag": "stomach",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/stomach_2",
-			"imageLabel": "Small Intestine",
-			"tag": "stomach",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/stomach_3",
-			"imageLabel": "Small Intestine",
-			"tag": "stomach",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/brain_1",
+			"imageName":  "images/portfolio/brain_",
 			"imageLabel": "Brain",
 			"tag": "brain",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/brain_2",
-			"imageLabel": "Brain",
-			"tag": "brain",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/heart_finished_1",
+			"imageName":  "images/portfolio/heart_finished_",
 			"imageLabel": "Heart",
 			"tag": "heart",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 3
 		},
 		{
-			"imageName":  "images/portfolio/heart_finished_2",
-			"imageLabel": "Heart",
-			"tag": "heart",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/heart_finished_3",
-			"imageLabel": "Heart",
-			"tag": "heart",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/kidney_finished_1",
+			"imageName":  "images/portfolio/kidney_finished_",
 			"imageLabel": "Kidney",
 			"tag": "kidney",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/kidney_finished_2",
-			"imageLabel": "Kidney",
-			"tag": "kidney",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/hand_1",
+			"imageName":  "images/portfolio/hand_",
 			"imageLabel": "Hand",
 			"tag": "hand",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 2
 		},
 		{
-			"imageName":  "images/portfolio/hand_2",
-			"imageLabel": "Hand",
-			"tag": "hand",
-			"keyPhoto": false,
-			"concentration": true
-		},
-		{
-			"imageName":  "images/portfolio/foot_1",
+			"imageName":  "images/portfolio/foot_",
 			"imageLabel": "Foot",
 			"tag": "foot",
-			"keyPhoto": true,
-			"concentration": true
+			"numberImages": 1
 		}
 	],
 
-
+	"BreadthImages" : [
+		{
+			"imageName":  "images/portfolio/blue_jar_",
+			"imageLabel": "Rutile Jar",
+			"tag": "blue_jar",
+			"numberImages": 3
+		},
+		{
+			"imageName":  "images/portfolio/dark_blue_jar_",
+			"imageLabel": "Dark Blue Jar",
+			"tag": "dark_blue_jar",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/blue_teapot_",
+			"imageLabel": "Blue-Split Teapot",
+			"tag": "blue_teapot",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/tan_bowl_",
+			"imageLabel": "Shino Bowl",
+			"tag": "tan_bowl",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/plate_",
+			"imageLabel": "Mint Plate",
+			"tag": "mint_plate",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/rock_teapot_",
+			"imageLabel": "Rock Teapot",
+			"tag": "rock_teapot",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/mugs_",
+			"imageLabel": "Face Mugs",
+			"tag": "mugs",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/teal_bowl_",
+			"imageLabel": "Rusted Teal Bowl",
+			"tag": "teal_bowl",
+			"numberImages": 2
+		},
+		{
+			"imageName":  "images/portfolio/vases_",
+			"imageLabel": "Mini-Vases",
+			"tag": "vases",
+			"numberImages": 2
+		}
+		
+	],
 
 	"RecentWorkImages" : [
 		{

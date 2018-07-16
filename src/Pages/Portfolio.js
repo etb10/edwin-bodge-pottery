@@ -18,8 +18,16 @@ class Portfolio extends Component {
 
   constructor() {
     super();
-    const allImages = DataArrays.PortfolioImages;
-    const keyPhotos = this.extractKeyPhotos(allImages);
+    const holdImages = DataArrays.PortfolioImages;
+    const allImages = this.createAllPhotos(holdImages); 
+    const keyPhotos = this.extractKeyPhotos(holdImages);
+
+    const holdBreadthImages = DataArrays.BreadthImages;
+    const allBreadthImages = this.createAllPhotos(holdBreadthImages); 
+    const keyBreadthPhotos = this.extractKeyPhotos(holdBreadthImages);
+
+
+
     var storageRef = firebase.storage().ref();
     this.state = {
       allImages: allImages,
@@ -27,13 +35,18 @@ class Portfolio extends Component {
       photoIndex: 0,
       isOpen: false,
       lightboxPhotos: [],
-      storageRef: storageRef
+      storageRef: storageRef,
+
+      breadthImages: allBreadthImages,
+      breadthKeyImages: keyBreadthPhotos,
+      showBreadth: false
     }
     this.openLightbox = this.openLightbox.bind(this);
   }
 
   openLightbox(tag) {
-    const images = this.extractMatchingPhotos(this.state.allImages, tag);
+    var imagesChosen = (this.state.showBreadth) ? this.state.breadthImages : this.state.allImages;
+    const images = this.extractMatchingPhotos(imagesChosen, tag);
     this.setState({
       isOpen: true,
       photoIndex: 0,
@@ -41,17 +54,40 @@ class Portfolio extends Component {
     })
   }
 
-  // add all photos that are marked as key to the list
-  extractKeyPhotos(allImages) {
-    var keyPhotos = [];
+  // add appropriate number to each image
+  createAllPhotos(allImages) {
+    console.log("creating all images")
+    var retImages = [];
     for(let i=0; i<allImages.length; i++) {
-      if(allImages[i].keyPhoto) {
-        var image = allImages[i];
-        image.imageName = image.imageName.split('.')[0] + compressedName;
-        keyPhotos.push(image);
+      for(let j=0; j<allImages[i].numberImages; j++) {
+        var imageHolder = allImages[i];
+        var number = j + 1;
+        var newImage = {
+          "imageName":  imageHolder.imageName + "" + number,
+          "imageLabel": imageHolder.imageLabel,
+          "tag": imageHolder.tag,
+          "numberImages": imageHolder.numberImages
+        }
+        retImages.push(newImage);
       }
     }
-    return keyPhotos;
+    return retImages;
+  }
+
+  // add 1 to every image URL and return that list
+  extractKeyPhotos(allImages) {
+    var retImages = [];
+    for(let i=0; i<allImages.length; i++) {
+      var imageHolder = allImages[i];
+      var newImage = {
+          "imageName":  imageHolder.imageName + "1" + compressedName,
+          "imageLabel": imageHolder.imageLabel,
+          "tag": imageHolder.tag,
+          "numberImages": imageHolder.numberImages
+        }
+      retImages.push(newImage);
+    }
+    return retImages;
   }
 
   extractMatchingPhotos(allImages, tag) {
@@ -99,18 +135,37 @@ class Portfolio extends Component {
                       </section>
 
                       <div className="box gallery">
-                        <div className="gallery-wrapper">
-                          {
-                            this.state.portfolioImages.map((portfolioImage, index) => 
-                              <GalleryItem
-                                imageData={portfolioImage}
-                                openModal={this.openLightbox}
-                                storageRef={this.state.storageRef}
-                                index={index}
-                              />
-                            )
-                          }
+                        <div className="portfolio-switch">
+                          <button className="portfolio-switch left"  onClick={() => this.setState({showBreadth: false})}> depth </button>
+                          <button className="portfolio-switch right" onClick={() => this.setState({showBreadth: true})}> breadth </button>
                         </div>
+                        { (!this.state.showBreadth) ?
+                          <div className="gallery-wrapper">
+                            {
+                              this.state.portfolioImages.map((portfolioImage, index) => 
+                                <GalleryItem
+                                  imageData={portfolioImage}
+                                  openModal={this.openLightbox}
+                                  storageRef={this.state.storageRef}
+                                  index={index}
+                                />
+                              )
+                            }
+                          </div>
+                          : 
+                          <div className="gallery-wrapper">
+                            {
+                              this.state.breadthKeyImages.map((portfolioImage, index) => 
+                                <GalleryItem
+                                  imageData={portfolioImage}
+                                  openModal={this.openLightbox}
+                                  storageRef={this.state.storageRef}
+                                  index={index}
+                                />
+                              )
+                            }
+                          </div>
+                        }
                       </div>
                   </div>
 

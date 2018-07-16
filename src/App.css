@@ -4828,3 +4828,26 @@ input, select, textarea {
       }
     }
 
+
+
+
+.portfolio-switch {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.portfolio-switch.left {
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    width: 150px;
+    font-size: 16px;
+    border-right: 2px solid black;
+}
+.portfolio-switch.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 150px;
+    font-size: 16px;
+    padding-bottom: 0px;
+}
