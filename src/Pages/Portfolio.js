@@ -127,14 +127,14 @@ class Portfolio extends Component {
                   <div id="main">
 
                     {/* Post */} 
-                      <section className="post">
+                      <section className="post" id="portfolio-post">
                         <header className="major">
                           <h1>AP Senior Portfolio</h1>
                         </header>
                           <p>This concentration illustrates the modern integration of inorganic structures into natural, organic configurations. I explore the fusion of mechanical appliances with anatomy, for with current medicine and science technologies it seems to me like the human body becomes less natural and more man-made every year. I want people to understand the connection I see between modern medicine and the mechanics of our bodies through anatomical creations.</p>
                       </section>
 
-                      <div className="box gallery">
+                      <div className="box gallery" id="portfolio-gallery">
                         <div className="portfolio-switch">
                           <button className="portfolio-switch left"  onClick={() => this.setState({showBreadth: false})}> depth </button>
                           <button className="portfolio-switch right" onClick={() => this.setState({showBreadth: true})}> breadth </button>

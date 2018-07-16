@@ -3774,7 +3774,7 @@ input, select, textarea {
       @media screen and (max-width: 1280px) {
 
         #main > .post {
-          padding: 6rem 4rem 4rem 4rem ;
+          padding: 6rem 4rem 0rem 4rem ;
         }
 
       }
@@ -3782,7 +3782,7 @@ input, select, textarea {
       @media screen and (max-width: 736px) {
 
         #main > .post {
-          padding: 4rem 1rem 2rem 1.1rem ;
+          padding: 4rem 1rem 0rem 1.1rem ;
         }
 
           #main > .post header.major > .date {
@@ -4850,4 +4850,13 @@ input, select, textarea {
     width: 150px;
     font-size: 16px;
     padding-bottom: 0px;
+}
+
+#portfolio-post {
+  padding-bottom: 0px;
+}
+
+#portfolio-gallery {
+  border: 0px;
+  padding-top: 0px;
 }
