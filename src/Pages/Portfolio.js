@@ -32,10 +32,6 @@ class Portfolio extends Component {
     this.openLightbox = this.openLightbox.bind(this);
   }
 
-  componentDidMount() {
-
-  }
-
   openLightbox(tag) {
     const images = this.extractMatchingPhotos(this.state.allImages, tag);
     this.setState({

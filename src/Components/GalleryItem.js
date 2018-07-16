@@ -17,23 +17,16 @@ class GalleryItem extends Component {
     this.state = {
       imageName:  imageData.imageName,
       imageLabel: imageData.imageLabel,
-      tag:        imageData.tag,
-      storageRef: props.storageRef,
-      index: props.index
+      tag:        imageData.tag
     }
   }
  
   render() {
     const imageExtension = this.state.imageName;
-    const image_id = "my_image_thumbnail_" + this.state.index;
-    this.state.storageRef.child(imageExtension).getDownloadURL().then(function(url) {
-      document.getElementById("my_image_thumbnail").src = url;
-    }).catch(function(error) {});
-
     return ( 
       <button className="gallery-item" onClick={() => this.props.openModal(this.state.tag)}>
         <div className="overlay">
-              <img id={image_id} src={imageExtension} alt={this.state.imageLabel}/>
+              <img src={imageExtension} alt={this.state.imageLabel}/>
         </div>
         <div className="desc">{this.state.imageLabel}</div>
       </button>
