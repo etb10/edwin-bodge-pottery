@@ -175,5 +175,47 @@
 			"keyPhoto": true,
 			"concentration": true
 		}
+	],
+
+
+
+	"RecentWorkImages" : [
+		{
+			"imageName":  "images/work/tan_jar_",
+			"imageLabel": "SH-172 / SH-088",
+			"tag": "tan_jar",
+			"numberImages": 3
+		},
+		{
+			"imageName":  "images/work/alice_mug_",
+			"imageLabel": "PC-21 / PC-23",
+			"tag": "alice_mugs",
+			"numberImages": 3
+		},
+		{
+			"imageName":  "images/work/dad_mug_",
+			"imageLabel": "Dad's Underglaze",
+			"tag": "dad_mug",
+			"numberImages": 3
+		},
+		{
+			"imageName":  "images/work/blue_green_mug_",
+			"imageLabel": "PC-21 / PC-23 / PC-12",
+			"tag": "blue_green_mugs",
+			"numberImages": 8
+		},
+		{
+			"imageName":  "images/work/charlie_mug_",
+			"imageLabel": "PC-21 + SH-088",
+			"tag": "charlie_mug",
+			"numberImages": 5
+		},
+		{
+			"imageName":  "images/work/blue_temmoku_mug_",
+			"imageLabel": "PC-21 / PC-30",
+			"tag": "blue_temmoku_mug",
+			"numberImages": 5
+		}
 	]
+
 }

@@ -35,7 +35,15 @@ class HomePage extends Component {
 
                 {/* Main */}
                   <div id="main">
-                    Hello
+                    
+                    {/* Post */} 
+                      <section className="post">
+                        <header className="major">
+                          <h1>Welcome to Edwin Bodge Pottery</h1>
+                        </header>
+                          
+                      </section>
+
                   </div>
 
                 {/* Footer */}
