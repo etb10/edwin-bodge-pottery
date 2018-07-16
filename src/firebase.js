@@ -5,7 +5,7 @@ const config = {
     authDomain: "edwin-bodge-pottery.firebaseapp.com",
     databaseURL: "https://edwin-bodge-pottery.firebaseio.com",
     projectId: "edwin-bodge-pottery",
-    storageBucket: "",
+    storageBucket: "gs://edwin-bodge-pottery.appspot.com",
     messagingSenderId: "150321880459"
   };
 firebase.initializeApp(config);

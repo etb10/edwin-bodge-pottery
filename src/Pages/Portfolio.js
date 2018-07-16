@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Lightbox from 'lightbox-react';
 import 'react-image-lightbox/style.css';
+import firebase, { auth, provider } from '../firebase.js';
 
 import EdwinMenu from '../Components/EdwinMenu.js';
 import NavBar from '../Components/NavBar.js';
@@ -19,14 +20,20 @@ class Portfolio extends Component {
     super();
     const allImages = DataArrays.PortfolioImages;
     const keyPhotos = this.extractKeyPhotos(allImages);
+    var storageRef = firebase.storage().ref();
     this.state = {
       allImages: allImages,
       portfolioImages: keyPhotos,
       photoIndex: 0,
       isOpen: false,
-      lightboxPhotos: []
+      lightboxPhotos: [],
+      storageRef: storageRef
     }
     this.openLightbox = this.openLightbox.bind(this);
+  }
+
+  componentDidMount() {
+
   }
 
   openLightbox(tag) {
@@ -102,6 +109,8 @@ class Portfolio extends Component {
                               <GalleryItem
                                 imageData={portfolioImage}
                                 openModal={this.openLightbox}
+                                storageRef={this.state.storageRef}
+                                index={index}
                               />
                             )
                           }
