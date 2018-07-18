@@ -17,14 +17,16 @@ class HomePage extends Component {
     this.imageDisplay = this.imageDisplay.bind(this);
   }
 
-  imageDisplay(url, name) {
+  imageDisplay(url, name, link) {
     return (
-                          <button className="gallery-item home-page" >
+                        <a href={link}>
+                          <button className="gallery-item home-page">
                             <div className="overlay">
-                                  <span class="image fit"><img src={url} alt="" /></span>
+                                  <span class="image fit" ><img src={url} alt="" /></span>
                             </div>
                             <div className="desc home-page">{name}</div>
                           </button>
+                        </a>
     )
   }
  
@@ -52,9 +54,9 @@ class HomePage extends Component {
                       <section className="post">
                         <header className="major">
                           <h1>Welcome to Edwin Bodge Pottery</h1>
-                          {this.imageDisplay("images/work/tan_bowls_1.jpg", "Recent Work")}
-                          {this.imageDisplay("images/portfolio/cell_1.full", "AP Portfolio")}
-                          {this.imageDisplay("images/common/clay_ball.jpg", "Kiln Instructions")}
+                          {this.imageDisplay("images/work/tan_bowls_1.jpg", "Recent Work", "/recent_work")}
+                          {this.imageDisplay("images/portfolio/cell_1.full", "AP Portfolio", "/portfolio")}
+                          {this.imageDisplay("images/common/clay_ball.jpg", "Kiln Instructions", "/kiln_instructions")}
                         </header>
                           
                       </section>
