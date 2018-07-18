@@ -4687,7 +4687,7 @@ input, select, textarea {
     }
 
     .gallery-item {
-      width: 33%;
+        width: 33%;
         height: auto;
         padding-left: 11px;
         padding-top: 11px;
@@ -4761,6 +4761,22 @@ input, select, textarea {
     border-color: #eeeeee;
   }
 
+  .gallery-item.home-page {
+    width: 100%;
+    padding-left: 0px;
+
+  }
+
+  .desc.home-page {
+    top: 50%;
+    font-size: 48px;
+  }
+
+  @media only screen and (max-width: 550px) {
+          .desc.home-page {
+              font-size: 32px;
+          }
+      }
 
 
 
