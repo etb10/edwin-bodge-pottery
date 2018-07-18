@@ -107,6 +107,10 @@ class Portfolio extends Component {
     const { lightboxPhotos, allImages, portfolioImages, photoIndex, isOpen } = this.state;
     const photoIndexPlus1 = photoIndex + 1;
     const photoIndexLabel = "(" + photoIndexPlus1 + " of " + lightboxPhotos.length + ")";
+
+    const leftSelected = (!this.state.showBreadth) ? "selected" : "not-selected";
+    const rightSelected = (this.state.showBreadth) ? "selected" : "not-selected";
+
     return ( 
         <div>
             {/* Mobile Menu */}
@@ -136,8 +140,8 @@ class Portfolio extends Component {
 
                       <div className="box gallery" id="portfolio-gallery">
                         <div className="portfolio-switch">
-                          <button className="portfolio-switch left"  onClick={() => this.setState({showBreadth: false})}> depth </button>
-                          <button className="portfolio-switch right" onClick={() => this.setState({showBreadth: true})}> breadth </button>
+                          <button className="portfolio-switch left" id={leftSelected} onClick={() => this.setState({showBreadth: false})}> depth </button>
+                          <button className="portfolio-switch right" id={rightSelected} onClick={() => this.setState({showBreadth: true})}> breadth </button>
                         </div>
                         { (!this.state.showBreadth) ?
                           <div className="gallery-wrapper">

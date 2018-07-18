@@ -14,7 +14,7 @@ class EdwinFooter extends Component {
     return ( 
                 <div>
                   <div id="copyright">
-                    <ul><li>&copy; Edwin Bodge </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                    <ul><li>&copy; Edwin Bodge: 2018</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
                   </div>
                 </div>
     );

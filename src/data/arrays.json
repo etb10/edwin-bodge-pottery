@@ -146,10 +146,10 @@
 			"numberImages": 3
 		},
 		{
-			"imageName":  "images/work/dad_mug_",
-			"imageLabel": "Dad's Underglaze",
-			"tag": "dad_mug",
-			"numberImages": 3
+			"imageName":  "images/work/tan_bowls_",
+			"imageLabel": "SH-172 / SH-088",
+			"tag": "tan_bowls",
+			"numberImages": 8
 		},
 		{
 			"imageName":  "images/work/blue_green_mug_",
@@ -158,9 +158,9 @@
 			"numberImages": 8
 		},
 		{
-			"imageName":  "images/work/charlie_mug_",
-			"imageLabel": "PC-21 + SH-088",
-			"tag": "charlie_mug",
+			"imageName":  "images/work/tan_plate_",
+			"imageLabel": "SH-172 / SH-088",
+			"tag": "tan_plate",
 			"numberImages": 5
 		},
 		{
@@ -168,6 +168,24 @@
 			"imageLabel": "PC-21 / PC-30",
 			"tag": "blue_temmoku_mug",
 			"numberImages": 5
+		},
+		{
+			"imageName":  "images/work/charlie_mug_",
+			"imageLabel": "PC-21 + SH-088",
+			"tag": "charlie_mug",
+			"numberImages": 5
+		},
+		{
+			"imageName":  "images/work/mom_jar_",
+			"imageLabel": "PC-23 / PC-21 | Eggshell",
+			"tag": "mom_jar",
+			"numberImages": 7
+		},
+		{
+			"imageName":  "images/work/tan_cups_",
+			"imageLabel": "SH-172 / SH-088",
+			"tag": "tan_cups",
+			"numberImages": 6
 		}
 	]
 
