@@ -45,6 +45,8 @@ class KilnInstructions extends Component {
                           <h1>Kiln Instructions</h1>
                         </header>
 
+                        <span class="image fit"><img src="images/common/clay_ball.jpg" alt="" /></span>
+
                         <header>
                           <h2>Handling Clay</h2>
                           <p>From wet clay to bone dry.</p>
@@ -66,6 +68,8 @@ class KilnInstructions extends Component {
                             </div>
                           </div>
                         </header>
+
+                        <span class="image fit"><img src="images/common/bisque.jpg" alt="" /></span>
 
                         <header>
                           <h2>Bisque Fire</h2>
@@ -92,6 +96,8 @@ class KilnInstructions extends Component {
                             </div>
                           </div>
                         </header>
+
+                        <span class="image fit"><img src="images/common/brushes_3.jpg" alt="" /></span>
 
                         <header>
                           <h2>Glazing and Second Fire</h2>
